@@ -1,0 +1,25 @@
+//
+//  Constants.swift
+//  AgnelDemo3
+//
+//  Created by Neosoft on 23/11/21.
+//
+
+import Foundation
+
+var productList = [
+    ProductModel(id: 1, productCategoryID: 1, name: "Centre Coffee Table", producer: "Luna", datumDescription: "Mild Steel Base In Poder Coated White Finish.8 mm Tempered Glass Table Top.Bottom Shelf In Paimted Brown Glass.", cost: 5000, rating: 3, viewCount: 27312, created: "2015-09-07T09:24:05+0000", modified: "2021-11-11T11:51:16+0000", productImages: "http://staging.php-dev.in:8844/trainingapp/uploads/prod_img/thumb/medium/9dc6234da018916e545011fa1.jpeg"),
+    ProductModel(id: 2, productCategoryID: 1, name: "Metal Coffee Table", producer: "Karlo", datumDescription: "Chrome Plated Mild Steel Table Base .8 mm Tempered Glass Table Top.Bottom Shelf In Paimted Brown Glass.", cost: 6666, rating: 2, viewCount: 10239, created: "2015-09-07T09:39:19+0000", modified: "2021-11-03T12:32:26+0000", productImages: "http://staging.php-dev.in:8844/trainingapp/uploads/prod_img/thumb/medium/b289043c1a85cde66f5f36484.jpeg"),
+    ProductModel(id: 3, productCategoryID: 1, name: "Vishwakarma Solid Table", producer: "Lelo", datumDescription: "Vishwakarma Furniture Solid Wood Coffee Table (Finish Color - Dark Black)", cost: 3333, rating: 2, viewCount: 10242, created: "2015-09-07T09:43:15+0000", modified: "2021-11-11T16:28:23+0000", productImages: "http://staging.php-dev.in:8844/trainingapp/uploads/prod_img/thumb/medium/3d4007c74793ff2564de15d71.jpeg"),
+    ProductModel(id: 13, productCategoryID: 1, name: "4 Seater Dining Table", producer: "Future Furniture Center", datumDescription: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).", cost: 27390, rating: 3, viewCount: 12367, created: "2015-09-14T10:15:45+0000", modified: "2021-11-12T06:19:00+0000", productImages: "http://staging.php-dev.in:8844/trainingapp/uploads/prod_img/thumb/medium/bc5a5b7df53f23c871204b8f2.jpg"),
+    ProductModel(id: 14, productCategoryID: 1, name: "computer table ", producer: "producer", datumDescription: "Mild Steel Base In Poder Coated White Finish.8 mm Tempered Glass Table Top.Bottom Shelf In Paimted Brown Glass.\r\n", cost: 7501, rating: 3, viewCount: 4511, created: "2016-02-26T11:29:19+0000", modified: "2021-11-08T10:11:23+0000", productImages: "http://staging.php-dev.in:8844/trainingapp/uploads/prod_img/thumb/medium/256aae7ec29a52054c76f2966.jpg"),
+    ProductModel(id: 15, productCategoryID: 1, name: "corner piece", producer: "Luna", datumDescription: "Mild Steel Base In Poder Coated White Finish.8 mm Tempered Glass Table Top.Bottom Shelf In Paimted Brown Glass.", cost: 7820, rating: 3, viewCount: 2607, created: "2016-02-26T11:31:35+0000", modified: "2021-11-03T11:09:08+0000", productImages: "http://staging.php-dev.in:8844/trainingapp/uploads/prod_img/thumb/medium/3bad1a0c6495bac9f10ed3464.jpg"),
+    ProductModel(id: 16, productCategoryID: 1, name: "Bed room table", producer: "producer", datumDescription: "Bed room table is there", cost: 7892, rating: 4, viewCount: 1549, created: "2016-02-26T11:53:15+0000", modified: "2021-11-03T11:18:27+0000", productImages: "http://staging.php-dev.in:8844/trainingapp/uploads/prod_img/thumb/medium/baeafcfb97cfc009e09b6361c.jpg"),
+    ProductModel(id: 17, productCategoryID: 1, name: "kitchen table", producer: "producer", datumDescription: "kitchen table", cost: 2350, rating: 3, viewCount: 1577, created: "2016-02-26T11:54:33+0000", modified: "2021-11-03T09:26:30+0000", productImages: "http://staging.php-dev.in:8844/trainingapp/uploads/prod_img/thumb/medium/d77300f11d38ac8f86a80fe39.png"),
+    ProductModel(id: 18, productCategoryID: 1, name: "hall table", producer: "producer", datumDescription: "hall table", cost: 7563, rating: 3, viewCount: 2615, created: "2016-02-26T11:54:58+0000", modified: "2021-11-03T04:50:00+0000", productImages: "http://staging.php-dev.in:8844/trainingapp/uploads/prod_img/thumb/medium/2b490b920cf0677338e6a4397.jpg"),
+    ProductModel(id: 19, productCategoryID: 1, name: "children table", producer: "producer", datumDescription: "children table", cost: 2560, rating: 3, viewCount: 1227, created: "2016-02-26T11:55:36+0000", modified: "2021-11-01T14:56:34+0000", productImages: "http://staging.php-dev.in:8844/trainingapp/uploads/prod_img/thumb/medium/4834c4aae1166478d8c29c298.jpg")
+]
+
+func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+    URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
+}
