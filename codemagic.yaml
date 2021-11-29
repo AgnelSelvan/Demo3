@@ -1,0 +1,10 @@
+workflows:
+  demo3-world:
+    name: Agnel Demo3 workflow
+    scripts:
+        - name: Agnel Demo3
+        scripts: echo "Welcome to CICD Setup"
+    publishing:
+        email:
+            recipients:
+                - agnelselvan007@gmail.com
